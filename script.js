@@ -7,3 +7,19 @@ function lengthValidator(number){
 };
 
 
+function doublingNumber(number){
+  let newCredit;
+  let split = number.split("");
+  let reverse = split.reverse();
+  newCredit = reverse.map(function(num, index){
+      if(index % 2 === 0){
+        return num *2
+      }else{
+        return num
+      }
+  })
+  return newCredit
+}
+
+console.log(doublingNumber("4102080860435620"))
+
